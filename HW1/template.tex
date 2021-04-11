@@ -17,9 +17,9 @@
 
 \section*{Student Information}
 
-Name : \\
+Name : Atakan Onol \\
 
-ID : \\
+ID : 2102648 \\
 
 
 \section*{Answer 1}
@@ -35,9 +35,9 @@ The expected value is $E(x) = \sum P(x) x$. Therefore for the blue die, the proa
     \end{tabular}
 \end{center}
 
-\begin{equation}
-    E_{blue}(x) = \sum P(x)\times x = 14/6
-\end{equation}
+\begin{align*}
+    E_{Blue}(x) = \sum P(x)\times x = 14/6
+\end{align*}
 
 
 The yellow die has a different expected value, and it is as follows;
@@ -51,9 +51,9 @@ The yellow die has a different expected value, and it is as follows;
     \end{tabular}
 \end{center}
 
-\begin{equation}
-    E_{yellow}(x) = \sum P(x)\times x = 12/6
-\end{equation}
+\begin{align*}
+    E_{Yellow}(x) = \sum P(x)\times x = 12/6
+\end{align*}
 
 
 
@@ -69,22 +69,106 @@ And lastly the expected value for the red die;
     \end{tabular}
 \end{center}
 
-\begin{equation}
-    E_{red}(x) = \sum P(x)\times x = 20/8
-\end{equation}
+\begin{align*}
+    E_{Red}(x) = \sum P(x)\times x = 20/8
+\end{align*}
 
 
 \subsection*{b)}
+We calculate the individual probabilities;
+$P(2_{Red}) = 2/8$, $P(1_{Yellow}) = 2/6$, $P(2_{Yellow}) = 2/6$, and
+$P(1_{Blue}) = 0$. We know that $E(x) = \sum xP(x)$, therefore we calculate 
+expected value for each event.
+\begin{align*}
+    E(\text{2 red and 1 yellow}) = 2 \times 2/8 + 1 \times 2/6 = 5/6 \\
+    E(\text{2 yellow and 1 blue}) = 2 \times 2/6 + 1 \times 0 = 4/6
+\end{align*}
+
+Therefore to maximize the total value, I would choose 2 red and 1 yellow.
+
 \subsection*{c)}
+We know that $P(2_{Yellow}) = 2/6$ and we can calculate $P(4_{Blue}) = 1/6$.
+We then recalculate the expected value and compare.
+
+\begin{align*}
+    E(\text{2 yellow and 4 blue}) = 2 \times 2/6 + 4 \times 1/6 = 8/6
+\end{align*}
+ In this scenario, the expected value exceeds the expected value of 2 red and 
+ 1 yellow, therefore I would choose 2 yellow and 4 blue. 
+
 \subsection*{d)}
+The following probabilities are true; $P(3_{Red}) = 3/8$, $P(3_{Yellow}) = 2/6$,
+and $P(3_{Blue}) = 1/6$. Since each probability of the event is independent, 
+we can say that probability that a red die is rolled is equal to the probability that
+a red 3 is rolled divided by the summation of the probability that a 3 is rolled for each die.
+
+\begin{align*}
+    P(\text{Die is red}) = \frac{1/3 \times 3/8}{1/3 \times (3/8 + 2/6 + 1/6)} = \frac{0.375}{0.875} \\
+    P(\text{Die is red}) = 0.42857
+\end{align*}
+
 \subsection*{e)}
+One can either roll a 3 with a red die and a 3 with the yellow die, or a 
+5 with the red die and a 1 with the yellow die. Since the yellow die has 6
+faces and the red die has 8 faces, there are a total of 48 different outcomes.
+Since the red die has a value of 3 on 3 of its faces, and the yellow die
+has the value of 3 on 2 of its faces, we multiply that for a total of 6 
+combinations. The yellow die has a value of 1 on 2 of its faces and the red
+has a value of 5 on 1 of its faces, if we multiply that we get a total of
+2 different combinations. If we add the favorable outcomes and divide it 
+by the total number of combinations, we get the value $P(x) = 8/48$.
+\newline
+\newline
+Another way to approach this is, to calculate the proability to roll the favorable
+values with each die, as such;
+
+\begin{center}
+    \begin{tabular}{ c | c }
+        $x$ & $P(x)$  \\ 
+        \hline
+        $3_{Red}$       & $3/8$     \\
+        $3_{Yellow}$    & $2/6$     \\
+        $5_{Red}$       & $1/8$     \\
+        $1_{Yellow}$    & $2/6$     \\
+    \end{tabular}
+\end{center}
+
+Therefore the probability that a red 3 and a yellow 3 will be rolled its
+$P(3_{Red},3_{Yellow}) = 3/8 \times 2/8 = 6/48$. And the probability to roll
+a red 5 and a yellow 1 is $P(5_{Red}, 1_{Yellow}) = 1/8 \times 2/6 = 2/48$.
+Since both events are independent, we can add the probabilities together so 
+that $x$ is our favorable events, $P(x) = 6/48 + 2/48 = 8/48$.
 
 \section*{Answer 2}
 \subsection*{a)}
+According to the provided table, there is only one event where $P(0,2) = 0.17$
 \subsection*{b)}
+The probability that there are two electric outages in Ankara is 0. Therefore
+the number of electric outages in Istanbul is irrelavent because $P(2,0) = 0$
 \subsection*{c)}
+There are three different outcomes to satisfy the event that there will be 
+exactly two outages in total. $P(0,2)$, $P(2,0)$, and $P(1,1)$. We already determined
+in part b that $P(2,0) = 0$. Looking at the table, we know that $P(0,2) = 0.17$ and 
+$P(1,1) = 0.11$. Therefore the probability that the given event will be satisfied
+is $P(0,2) + P(2,0) + P(1,1) = 0.17 + 0 + 0.11 = 0.28$. So the probability is $0.28$.
 \subsection*{d)}
+The probability that Ankara will only have a single power outage is 
+$\sum P(1,x)$ where $x$ is all real numbers. Therefore, the probability is 
+$P(1,0) + P(1,1) + P(1,2) + P(1,3) = 0.12 + 0.11 + 0.22 + 0.15 = 0.60$ because
+each event is mutually exclusive. 
 \subsection*{e)}
+To calculate the distibution, we use the cumulative distribution function.
+To do so we add all of the probabilities together. 
+
+\begin{align*}
+    P(0,0) + P(0,1) + P(0,2) + P(0,3) + P(1,0) + P(1,1) + P(1,2) + P(1,3) \\
+    = 0.08+0.13+0.17+0.02+0.12+0.11+0.22+0.15 = 1
+\end{align*}
+
 \subsection*{f)}
+To be independent $P(A\cap I) = P(A)*P(I)$. Since we do not have the relavent data 
+to prove it using this method, we have to deduce the following; We are told that this is 
+a joint probability table and for joint probility to work, the events need to be independent.
+Therefore we can safely say that the electric outages in Ankara and Istanbul are independent events.
 
 \end{document}
